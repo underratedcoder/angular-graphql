@@ -1,0 +1,13 @@
+<div *ngIf="loading">
+    Loading...
+</div>
+<div *ngIf="error">
+    Error :(
+</div>
+<div *ngIf="courses">
+    <div *ngFor="let course of courses">
+        <p>
+            {{ course.title }} || {{ course.author }} || {{ course.topic }}
+        </p>
+    </div>
+</div>
